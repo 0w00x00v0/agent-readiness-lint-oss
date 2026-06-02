@@ -60,7 +60,7 @@ python -m agent_readiness_lint \
   --project-name "widget-service"
 ```
 
-This prints a deterministic score of `79/100 (Needs minor cleanup)`. See
+This prints a deterministic score of `76/100 (Needs minor cleanup)`. See
 [examples/README.md](examples/README.md) for the full expected output and an
 explanation of each finding.
 
@@ -158,6 +158,7 @@ This clean public mirror intentionally does not include GitHub Actions workflow 
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
 
 
 

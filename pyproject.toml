@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-readiness-lint"
+version = "0.1.0"
+description = "Local-only linter that checks repository readiness for AI agent workflows"
+requires-python = ">=3.10"
+license = {text = "Pending"}
+authors = [{name = "0x0"}]
+keywords = ["agent", "lint", "readiness", "ai"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "ruff>=0.1.0"]
+
+[project.scripts]
+agent-readiness-lint = "agent_readiness_lint.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["agent_readiness_lint*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100

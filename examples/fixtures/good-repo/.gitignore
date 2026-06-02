@@ -1,0 +1,8 @@
+out/
+__pycache__/
+.venv/
+node_modules/
+.agents/
+.kiro/
+*.egg-info/
+.env

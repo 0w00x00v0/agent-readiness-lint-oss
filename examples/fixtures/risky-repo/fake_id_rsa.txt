@@ -1,0 +1,6 @@
+# Intentional fake private-key-shaped text for testing secret-risk detection.
+# Not a real private key. Do not use for authentication.
+# Deliberately uses a non-standard FAKE header so public readers and scanners do not mistake it for a real private key.
+-----BEGIN FAKE RSA PRIVATE KEY-----
+fakekey
+-----END FAKE RSA PRIVATE KEY-----

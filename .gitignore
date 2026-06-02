@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# Outputs and logs
+out/
+output/
+outputs/
+logs/
+tmp/
+temp/
+
+# Agent/internal artifacts
+.agents/
+.kiro/
+.cursor/
+.codex/
+
+# Local secrets/config
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx

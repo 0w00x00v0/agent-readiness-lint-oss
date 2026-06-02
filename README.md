@@ -10,8 +10,8 @@ Requires Python 3.10 or later.
 
 ```bash
 # Clone the repository
-git clone https://github.com/0w00x00v0/0x0-agent-readiness-lint.git
-cd 0x0-agent-readiness-lint
+git clone https://github.com/0w00x00v0/agent-readiness-lint-oss.git
+cd agent-readiness-lint-oss
 
 # Install in development mode
 pip install -e .
@@ -146,10 +146,7 @@ pytest tests/ -v
 ruff check agent_readiness_lint/ tests/
 ```
 
-Continuous integration runs `ruff` and the `pytest` suite on Python 3.10-3.12
-via GitHub Actions (`.github/workflows/ci.yml`). The workflow is offline apart
-from installing dependencies, uses no secrets, and performs no publish or
-release steps.
+This clean public mirror intentionally does not include GitHub Actions workflow files in the initial public release. Run the local validation commands above (`ruff check agent_readiness_lint/ tests/` and `pytest tests/ -v`) before relying on changes. The private source repository was validated before this clean mirror was published.
 
 ## Project status and docs
 
@@ -161,6 +158,7 @@ release steps.
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
 
 
 
